@@ -1,0 +1,54 @@
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c0a0b;
+  overflow: hidden;
+  z-index: 100;
+  font-family: "Bronten" , sans-serif;
+  letter-spacing: 0.15em
+}
+
+.preloader .text-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  overflow: hidden;
+  color: white;
+  opacity: 0;
+}
+
+
+@media (max-width: 700px) {
+  .nav .links {
+    display: none;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .content section {
+    flex-direction: column;
+  }
+}
+
+.content section:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 700px) {
+  .content section:nth-of-type(even) {
+    flex-direction: column;
+  }
+}
